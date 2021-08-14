@@ -18,9 +18,9 @@ function onSignIn(googleUser) {
 
     console.log(mailword)
 
-    database.ref("/users/"+mailword+"/umail").set(userInput.value);
-    database.ref("/users/"+mailword+"/uname").set(mailword);
-    database.ref("/users/"+mailword+"/upass").set(passInput.value);
+    database.ref("/users/"+mailword+"/umail").set(umail);
+    database.ref("/users/"+mailword+"/uname").set(uname);
+    database.ref("/users/"+mailword+"/upass").set(uimg);
 
     console.log(" User successfully created! .. Try Login ");
 
