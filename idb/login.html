@@ -302,7 +302,20 @@
 
     </script>
 
-<script src="../Google_Signin/index.js" async defer></script>
+<script 
+function onSignIn(googleUser) {
+  var profile = googleUser.getBasicProfile();
+colsole.log("done");
+}
+
+function signOut() {
+  var auth2 = gapi.auth2.getAuthInstance();
+  auth2.signOut().then(function () {
+  });
+}
+
+async defer>
+</script>
 
     <script src="https://apis.google.com/js/platform.js" async defer></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/js/bootstrap.bundle.min.js"
