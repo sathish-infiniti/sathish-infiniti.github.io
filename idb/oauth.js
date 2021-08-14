@@ -1,11 +1,11 @@
 function onSignIn(googleUser) {
-    console.log("done")
     var profile = googleUser.getBasicProfile();
     $("#name").text(profile.getName());
     $("#email").text(profile.getEmail());
     $("#image").attr('src', profile.getImageUrl());
     $(".data").css("display", "block");
-    $(".g-signin2").css("display", "none");
+    //$(".g-signin2").css("display", "none");
+    window.location.href = 'index.html';
     
 }
 
