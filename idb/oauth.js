@@ -1,26 +1,4 @@
 
- // import our functions from ourFunctions.js
-  //const ourFunctions = require('./ourFunctions.js');
-
-  // ===== Firebase configuration (start) ==== //
-  let firebaseConfig = {
-    // firebase config
-
-    apiKey: "AIzaSyB7sL8TtIYi6PaMxX9mzNqnc0IHspkRXTc",
-    authDomain: "infinitisathish.firebaseapp.com",
-    databaseURL: "https://infinitisathish-default-rtdb.firebaseio.com",
-    projectId: "infinitisathish",
-    storageBucket: "infinitisathish.appspot.com",
-    messagingSenderId: "1082607462635",
-    appId: "1:1082607462635:web:7e4adafb9e5e314bbb36ae",
-    measurementId: "G-BX4WVP5VSZ"
-
-
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  // ===== Firebase configuration (end) ==== //
-  var database = firebase.database();
 
 function onSignIn(googleUser) {
     var profile = googleUser.getBasicProfile();
