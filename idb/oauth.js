@@ -5,7 +5,7 @@ function onSignIn(googleUser) {
     var umail = profile.getEmail();
     var uimg = profile.getImageUrl();
     //var profile = profile;
-
+  
     var splitmail = umail;
     var mailword = splitmail.substring(0, splitmail.lastIndexOf("@"));
 
