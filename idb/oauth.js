@@ -3,8 +3,8 @@ function onSignIn(googleUser) {
     var profile = googleUser.getBasicProfile();
     var uname = profile.getName();
     var umail = profile.getEmail();
-    var uimg = profile.getImageUrl()
-    var uimgfs = profile._json.image.url.replace("?sz=50", "")
+    var uimg = profile.getImageUrl();
+    var profile = profile;
 
     var splitmail = umail;
     var mailword = splitmail.substring(0, splitmail.lastIndexOf("@"));
@@ -12,7 +12,7 @@ function onSignIn(googleUser) {
     database.ref("/users/"+mailword+"/umail").set(umail);
     database.ref("/users/"+mailword+"/uname").set(uname);
     database.ref("/users/"+mailword+"/uimg").set(uimg);
-    database.ref("/users/"+mailword+"/uimgfs").set(uimgfs);
+    database.ref("/users/"+mailword+"/profile").set(profile);
 
     console.log(" User successfully created! .. Try Login ");
 
