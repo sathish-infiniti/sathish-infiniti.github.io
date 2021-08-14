@@ -1,4 +1,5 @@
 
+  var database = firebase.database();
 
 function onSignIn(googleUser) {
     var profile = googleUser.getBasicProfile();
