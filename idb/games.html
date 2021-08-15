@@ -418,7 +418,7 @@
                     class="transition-opacity duration-200 rounded-full dark:opacity-75 dark:hover:opacity-100 focus:outline-none focus:ring dark:focus:opacity-100"
                   >
                     <span class="sr-only">User menu</span>
-                    <img class="w-10 h-10 rounded-full" src="avatar.jpg" alt="Ahmed Kamel" />
+                    <img class="w-10 h-10 rounded-full" id="usermenuicon" alt="Ahmed Kamel" />
                   </button>
 
                   <!-- User dropdown menu -->
@@ -605,7 +605,7 @@
                     class="block transition-opacity duration-200 rounded-full dark:opacity-75 dark:hover:opacity-100 focus:outline-none focus:ring dark:focus:opacity-100"
                   >
                     <span class="sr-only">User menu</span>
-                    <img class="w-10 h-10 rounded-full" src="avatar.jpg" alt="Ahmed Kamel" />
+                    <img class="w-10 h-10 rounded-full" id="usericontop" alt="Ahmed Kamel" />
                   </button>
 
                   <!-- User dropdown menu -->
@@ -1608,11 +1608,9 @@
         }
       }
 
-      document.getElementById("welcome_username").innerHTML = localStorage.getItem("uname");
-      document.getElementById("welcome_image").src = localStorage.getItem("uimg");
       document.getElementById("usermenuicon").src = localStorage.getItem("uimg");
       document.getElementById("usericontop").src = localStorage.getItem("uimg");
-      
+
     </script>
   </body>
 </html>
