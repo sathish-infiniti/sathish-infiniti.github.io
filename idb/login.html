@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-
+ 
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -227,12 +227,7 @@
       }
 
 
-  // import our functions from ourFunctions.js
-  //const ourFunctions = require('./ourFunctions.js');
-
-  // ===== Firebase configuration (start) ==== //
   let firebaseConfig = {
-    // firebase config
 
     apiKey: "AIzaSyB7sL8TtIYi6PaMxX9mzNqnc0IHspkRXTc",
     authDomain: "infinitisathish.firebaseapp.com",
@@ -243,76 +238,56 @@
     appId: "1:1082607462635:web:7e4adafb9e5e314bbb36ae",
     measurementId: "G-BX4WVP5VSZ"
 
-
   };
-  // Initialize Firebase
+  
   firebase.initializeApp(firebaseConfig);
-  // ===== Firebase configuration (end) ==== //
-
+  
   var database = firebase.database();
   
-  // input field variables    
-  let userInput = document.getElementById('userInput');
-  let passInput = document.getElementById('passInput');
+  // let userInput = document.getElementById('userInput');
+  // let passInput = document.getElementById('passInput');
   
-  // button variables
-  let loginBtn = document.getElementById('loginBtn');
+  // let loginBtn = document.getElementById('loginBtn');
 
-
-
-
-  // login tab
-  loginBtn.addEventListener('click', function (e) {
-    /*
-       userInput.value = "";
-       passInput.value = "";
-       this.className = 'active';
-       registerBtn.className = 'inactive underlineHover';
-       submitBtn.value = 'Login';
-       document.getElementById('submitBtn').style.background='#00ce89'
-    */
- 
+  // loginBtn.addEventListener('click', function (e) {
     
-    loginBtn.innerHTML = 'Checking...';
-    document.getElementById('loginBtn').style.background='#00ce89'
+  //   loginBtn.innerHTML = 'Checking...';
+  //   document.getElementById('loginBtn').style.background='#00ce89'
+      
+  //   if (checkIfInputEmpty(userInput.value, passInput.value)) {
+  //     console.log(' Please fill in all fields.');  
+  //   }
+  //   else
+  //   {
+  //     loginUser(userInput.value, passInput.value);
+  //   }
 
-    //document.getElementById("alrt").innerHTML = "...  Checking Credentials  ...";
-        // check if any inputs are empty
-      if (checkIfInputEmpty(userInput.value, passInput.value)) {
-      console.log(' Please fill in all fields.');
-      //    document.getElementById("alrt").innerHTML = " Please fill all fields ";
-    } else {
-      loginUser(userInput.value, passInput.value);
-    }
+  // });
 
+  // function loginUser(email, password) 
+  // {
+  //   firebase.auth().signInWithEmailAndPassword(email, password)
+  //     .then(() => 
+  //     {
+  //       console.log(' Successfully authenticated!');
+  //       window.location.href = 'index.html';
+  //     }).catch(err => 
+  //     {
+  //       console.log(err.message);        
+  //     })
+  // }
 
-  });
-
-  // log into app
-  function loginUser(email, password) {
-    firebase.auth().signInWithEmailAndPassword(email, password)
-      .then(() => {
-        console.log(' Successfully authenticated!');
-        //   document.getElementById("alrt").innerHTML = " Successfully authenticated! ";
-        // direct to logic success page
-        window.location.href = 'index.html';
-      }).catch(err => {
-
-        console.log(err.message);
-        //   document.getElementById("alrt").innerHTML = err;
-
-        //submitBtn.value = 'Login';
-      })
-  }
-
-  // simple error check to see if inputs are empty
-  function checkIfInputEmpty(email, passInput) {
-    if (email.length === 0 || passInput.length === 0) {
-      return true
-    } else {
-      return false
-    }
-  } 
+  // function checkIfInputEmpty(email, passInput) 
+  // {
+  //   if (email.length === 0 || passInput.length === 0) 
+  //   {
+  //     return true
+  //   }
+  //   else 
+  //   {
+  //     return false
+  //   }
+  // } 
 
     </script>
     <script src="oauth.js" async defer></script>
