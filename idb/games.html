@@ -1607,6 +1607,12 @@
           updateLineChart,
         }
       }
+
+      document.getElementById("welcome_username").innerHTML = localStorage.getItem("uname");
+      document.getElementById("welcome_image").src = localStorage.getItem("uimg");
+      document.getElementById("usermenuicon").src = localStorage.getItem("uimg");
+      document.getElementById("usericontop").src = localStorage.getItem("uimg");
+      
     </script>
   </body>
 </html>
