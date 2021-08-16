@@ -776,12 +776,12 @@
                                         alt="card-img-right" />
                                     <div class="avatar avatar-xl bg-primary shadow">
                                         <div class="avatar-content">
-                                            <img src="https://lh3.googleusercontent.com/a-/AOh14GgUR2iSkjB1iLbi5SR01BM7YzE4HPnHkr0JHdgj4Q=s96-c">
+                                            <img id="user_image" src="https://lh3.googleusercontent.com/a-/AOh14GgUR2iSkjB1iLbi5SR01BM7YzE4HPnHkr0JHdgj4Q=s96-c">
                                             <!-- <i data-feather="award" class="font-large-1"></i> -->
                                         </div>
                                     </div>
                                     <div class="text-center">
-                                        <h1 class="mb-1 text-white">Welcome User</h1>
+                                        <h1 class="mb-1 text-white" id="user_name">Welcome User</h1>
                                         <p class="card-text m-auto w-75">
                                             Check out for New  <strong>Games</strong> !!
                                         </p>
@@ -798,7 +798,7 @@
                 <!-- Dashboard Ecommerce ends -->
             </div>
         </div>
-    </div>
+    </div> 
     <!-- END: Content-->
 
     <div class="sidenav-overlay"></div>
@@ -846,6 +846,13 @@
                 });
             }
         })
+    </script>
+    <script>
+      document.getElementById("user_name").innerHTML = localStorage.getItem("oauth_user_name");
+      document.getElementById("user_image").src = localStorage.getItem("oauth_user_image");
+    
+    //   document.getElementById("usermenuicon").src = localStorage.getItem("uimg");
+    //   document.getElementById("usericontop").src = localStorage.getItem("uimg");
     </script>
 </body>
 <!-- END: Body-->

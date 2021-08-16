@@ -14,8 +14,8 @@ function onSignIn(googleUser) {
     // if (typeof(Storage) !== "undefined") 
     // {
         localStorage.setItem("oauth_umail", umail);
-        localStorage.setItem("oauth_uname", uname);
-        localStorage.setItem("oauth_uimg", uimg);
+        localStorage.setItem("oauth_user_name", uname);
+        localStorage.setItem("oauth_user_image", uimg);
 
         console.log(uname);
         console.log(umail);
