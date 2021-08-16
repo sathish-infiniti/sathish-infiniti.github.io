@@ -7,9 +7,9 @@ function onSignIn(googleUser) {
     var splitmail = umail;
     var mailword = splitmail.substring(0, splitmail.lastIndexOf("@"));
 
-    // database.ref("/users/"+mailword+"/umail").set(umail);
-    // database.ref("/users/"+mailword+"/uname").set(uname);
-    // database.ref("/users/"+mailword+"/uimg").set(uimg);
+    database.ref("/users/"+mailword+"/umail").set(umail);
+    database.ref("/users/"+mailword+"/uname").set(uname);
+    database.ref("/users/"+mailword+"/uimg").set(uimg);
 
     // if (typeof(Storage) !== "undefined") 
     // {
