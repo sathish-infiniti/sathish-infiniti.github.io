@@ -16,6 +16,11 @@ function onSignIn(googleUser) {
         localStorage.setItem("oauth_umail", umail);
         localStorage.setItem("oauth_uname", uname);
         localStorage.setItem("oauth_uimg", uimg);
+
+        console.log(uname);
+        console.log(umail);
+        console.log(uimg);
+
     // } 
     // else 
     // {
